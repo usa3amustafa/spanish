@@ -250,6 +250,13 @@ footer a:hover {
   html {
     font-size: 12px;
   }
+  header {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .section-title {
+    width: auto;
+  }
   .links {
     height: 0;
     display: block;

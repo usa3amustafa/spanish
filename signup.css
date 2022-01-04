@@ -97,7 +97,7 @@ a:hover {
 
 @media (max-width: 990px) {
   .form-container {
-    width: 90%;
+    width: 100%;
   }
 }
 
