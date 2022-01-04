@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #4342f2;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+article {
+  height: 100vh;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 7rem;
+  margin-bottom: -40px;
+  z-index: 2;
+}
+
+nav {
+  background-color: rgba(20, 20, 20);
+  padding: 1.25rem 3rem;
+  border-radius: 2rem;
+  width: 60%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-nav {
+  display: flex;
+}
+
+#active {
+  color: #fefefe;
+}
+
+.shop-nav li a {
+  color: #505050;
+}
+
+li:first-child {
+  border-right: 1px solid #ff6f00;
+  padding-right: 2rem;
+}
+li:last-child {
+  padding-left: 2rem;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.animated-img {
+  width: 50%;
+  animation: bounce 6s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+.btn {
+  border-radius: 50px;
+  border: 3px solid #fefefe;
+  overflow: hidden;
+  padding: 1rem 3rem;
+  background: inherit;
+  color: #fefefe;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #5865f2;
+}
+
+footer {
+  color: #fefefe;
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 0%;
+  padding: 1rem;
+}
+
+#menu {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  nav {
+    padding-top: 1rem;
+    display: block;
+  }
+  .nav {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+  }
+  .shop-nav {
+    display: block;
+  }
+  .show-nav {
+    height: 120px;
+  }
+  li:first-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  li:last-child {
+    padding-left: 0;
+  }
+  .shop-nav-link {
+    padding: 0;
+    border: none;
+    padding: 2rem 0;
+  }
+  #menu {
+    color: #fefefe;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #fefefe;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    position: relative;
+    left: 90%;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 90%;
+  }
+  nav {
+    width: 100%;
+  }
+  .article {
+    display: block;
+  }
+}

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.logo img {
+  animation: bounce 6s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#menu {
+  font-size: 1.5rem;
+  color: var(--font-clr-pri);
+  display: none;
+}
+.links {
+  height: auto;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.link {
+  font-weight: 600;
+  color: #fefefe;
+  transition: color 200ms ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  color: #164a98;
+}
+
+.main {
+  color: #fefefe;
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h3 {
+  letter-spacing: 0.25rem;
+}
+
+main .title {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.dynamic-text li span {
+  position: relative;
+}
+
+.dynamic-text li span::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 5px solid #fefefe;
+  /* animation: typing 1.5s steps(21) infinite; */
+}
+
+.dynamic-text li .third-title::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  border-left: 5px solid #fefefe;
+  animation: typing 1.5s steps(56) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
+
+.btn {
+  border-radius: 50px;
+  border: 3px solid #fefefe;
+  overflow: hidden;
+  padding: 1rem 3rem;
+  background: inherit;
+  color: #fefefe;
+  margin-top: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  transition: all 200ms ease-in-out;
+}
+
+.btn .arrow {
+  font-size: 2rem;
+}
+
+.main-btn:hover {
+  background-color: #5865f2;
+}
+
+/* sticky nav  */
+.sticky {
+  background-color: rgba(30, 30, 30, 0.95);
+  color: var(--font-clr-sec);
+  box-shadow: 0px 5px 5px rgba(51, 51, 51, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* section  */
+
+section {
+  padding: 8rem 0;
+  color: #333;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 600;
+  border-bottom: 4px double red;
+  border-radius: 25px;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 350px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.section-text {
+  margin-top: 6rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.discord-icon {
+  margin-top: 1rem;
+  color: #5865f2;
+  font-size: 3rem;
+  transition: all 300ms ease-in-out;
+}
+.discord-icon:hover {
+  transform: scale(1.5);
+}
+.instagram-icon {
+  margin-top: 1rem;
+  color: #cd486b;
+  font-size: 3rem;
+  transition: all 300ms ease-in-out;
+}
+.instagram-icon:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  background-color: rgb(20, 20, 20);
+  color: #fefefe;
+
+  padding: 2rem 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #164a98;
+  transition: color 200ms ease-in-out;
+}
+
+footer a:hover {
+  color: #fefefe;
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 12px;
+  }
+  .links {
+    height: 0;
+    display: block;
+  }
+  .show-links {
+    height: 11rem;
+  }
+  .link {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  #menu {
+    color: #fefefe;
+    font-size: 3rem;
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    display: block;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
