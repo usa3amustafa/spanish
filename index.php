@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>𝚄𝙽𝙸𝙾𝙽 𝚁𝙿 | 𝚄𝙽𝙰 𝙽𝚄𝙴𝚅𝙰 𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -22,25 +22,27 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <script src="./app.js" defer></script>
+    <script src="./js/app.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <div class="nav">
-          <div class="nav-header">
-            <div class="logo">
-              <img src="./img/logo.png" alt="ug logo" />
+        <div class="container">
+          <div class="nav">
+            <div class="nav-header">
+              <div class="logo">
+                <img src="./img/logo.png" alt="ug logo" />
+              </div>
+              <div id="menu" class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </div>
             </div>
-            <div id="menu" class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </div>
+            <ul class="links">
+              <li><a href="#" class="link">INICIO</a></li>
+              <li><a href="shop.php" class="link">TIENDA</a></li>
+              <li><a href="#" class="link">FORO</a></li>
+            </ul>
           </div>
-          <ul class="links">
-            <li><a href="#" class="link">INICIO</a></li>
-            <li><a href="shop.html" class="link">TIENDA</a></li>
-            <li><a href="#" class="link">FORO</a></li>
-          </ul>
         </div>
       </nav>
 

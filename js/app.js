@@ -1,4 +1,4 @@
-const nav = document.querySelector('.nav')
+const nav = document.querySelector('nav')
 const logo = document.querySelector('.logo')
 const menu = document.querySelector('#menu')
 const link = document.querySelectorAll('.link')

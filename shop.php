@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="./css/shop.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -20,37 +20,38 @@
       referrerpolicy="no-referrer"
     />
     <title>Union Shop</title>
+    <script src="./js/shop.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="form-container">
+    <article class="shop">
+      <div class="container flex">
         <div class="logo">
           <img src="./img/logo.png" alt="" />
         </div>
-        <h1>UNION SHOP</h1>
-        <form action="">
-          <p class="form-element">
-            <label for="email"><i class="fas fa-envelope"></i></label>
-            <input type="email" placeholder="Corro Electronico" />
-          </p>
-          <p class="form-element">
-            <label for="password"><i class="fas fa-key"></i></label>
-            <input type="password" placeholder="Contraseña" />
-          </p>
-          <button class="btn">Iniciar</button>
-        </form>
-        <p class="form-footer">
-          Al registrarte, podrás tener acceso a los beneficios de la tienda..
-        </p>
+        <nav>
+          <i id="menu" class="fas fa-bars"></i>
+          <div class="nav">
+            <ul class="shop-nav">
+              <li><a href="#" class="shop-nav-link" id="active">INICIO</a></li>
+              <li><a href="#" class="shop-nav-link">VIP</a></li>
+            </ul>
+            <ul class="shop-nav">
+              <li><a href="#" class="shop-nav-link">CASAS</a></li>
+              <li><a href="#" class="shop-nav-link">VEHICULOS</a></li>
+            </ul>
+          </div>
+        </nav>
 
-        <p class="form-footer">
-          ¿No tienes una cuenta? <a href="signup.html">Registrate</a>
-        </p>
+        <div class="img">
+          <img src="./img/fivem.png" class="animated-img" alt="" />
+        </div>
 
-        <p class="form-footer">
-          <a href="#">Atras</a>
-        </p>
+        <a href="./login.php" class="btn">ENTRAR</a>
+
+        <footer>
+          <p>© Todos los derechos reservados | UNION RP | 2022</p>
+        </footer>
       </div>
-    </div>
+    </article>
   </body>
 </html>
