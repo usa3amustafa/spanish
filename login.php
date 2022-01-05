@@ -50,7 +50,7 @@ if(empty($err))
                             $_SESSION["loggedin"] = true;
 
                             //Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: https://unionrp.tebex.io");
                             
                         }
                     }

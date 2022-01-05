@@ -23,9 +23,12 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="./js/app.js" defer></script>
+
+    
   </head>
   <body>
     <header>
+
       <nav>
         <div class="container">
           <div class="nav">
@@ -46,6 +49,9 @@
         </div>
       </nav>
 
+
+      
+          
       <main>
         <div class="container main header-section">
           <h3>𝚄𝙽𝙸𝙾𝙽 𝚁𝙿 | 𝚄𝙽𝙰 𝙽𝚄𝙴𝚅𝙰 𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰</h3>

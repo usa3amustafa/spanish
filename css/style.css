@@ -42,26 +42,6 @@ header {
   padding: 1rem 3rem;
 }
 
-.logo {
-  width: 7rem;
-}
-
-.logo img {
-  animation: bounce 6s infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-10%);
-  }
-  50% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-10%);
-  }
-}
-
 .links {
   display: flex;
   align-items: center;
@@ -86,6 +66,61 @@ header {
 }
 .link:hover {
   color: #164a98;
+}
+.logo {
+  width: 8rem;
+}
+
+.logo img {
+  animation: bounce 6s infinite;
+}
+
+.links {
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 0%;
+}
+.show-links {
+  height: 11rem;
+  width: 20%;
+  position: absolute;
+  top: 100px;
+  left: 90%;
+  transform: translateX(-90%);
+  background-color: #000;
+}
+.link {
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+}
+#menu {
+  color: #fefefe;
+  font-size: 3rem;
+  display: block;
+  cursor: pointer;
+}
+.nav {
+  display: block;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
 }
 
 .main {
@@ -257,32 +292,7 @@ footer a:hover {
   .section-title {
     width: auto;
   }
-  .links {
-    height: 0;
-    display: block;
-  }
-  .show-links {
-    height: 11rem;
-  }
-  .link {
-    display: block;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  #menu {
-    color: #fefefe;
-    font-size: 3rem;
-    display: block;
-    cursor: pointer;
-  }
-  .nav {
-    display: block;
-  }
-  .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
   .footer {
     flex-direction: column;
     gap: 3rem;
